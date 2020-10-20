@@ -3,7 +3,10 @@ export const home = (req, res) => {
 };
 
 export const search = (req, res) => {
-  res.render("search", { pageTitle: "Search" });
+  const {
+    query: { search_query },
+  } = req;
+  res.render("search", { pageTitle: "Search", search_query });
 };
 
 export const upload = (req, res) => {

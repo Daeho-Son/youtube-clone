@@ -1,5 +1,18 @@
-export const join = (req, res) => {
+import routes from "../routes";
+
+export const getJoin = (req, res) => {
   res.render("join", { pageTitle: "Join" });
+};
+
+export const postJoin = (req, res) => {
+  const {
+    body: { name, email, password, verifyPassword },
+  } = req;
+  if (password === verifyPassword) {
+    res.redirect(routes.home);
+  } else {
+    res.redirect(routes.join);
+  }
 };
 
 export const login = (req, res) => {

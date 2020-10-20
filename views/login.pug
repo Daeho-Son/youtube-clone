@@ -1,4 +1,9 @@
 extends ./layouts/main
 
 block content
-  h3 Login
+  .form-container
+    h1 로그인
+    form(action=routes.join, method="post")
+      input(type="email", name="email", placeholder="이메일 주소", required=true)
+      input(type="password" name="password", placeholder="비밀번호", required=true)
+      input(type="submit", value="확인")

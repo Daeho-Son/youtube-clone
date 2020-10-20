@@ -4,7 +4,7 @@
 
 # To Do
 
-  ## Global
+  ### Global
   - [ ] Home
 
   - [ ] Join
@@ -15,14 +15,14 @@
 
   - [ ] Search
 
-  ## User
+  ### User
   - [ ] Profile
 
   - [ ] Edit Profile
 
   - [ ] Chagne Password
 
-  ## Video
+  ### Video
   - [ ] Upload
 
   - [ ] Video Detail

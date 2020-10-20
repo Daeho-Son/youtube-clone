@@ -5,20 +5,24 @@ header.header
         i.fab.fa-youtube
   .header__column
     form(action=routes.search, method="get")
-      input(type="text", name="search", placeholder="검색")
+      input(type="text", name="search_query", placeholder="검색")
       input(type="submit", value="검색")
   .header__column
-    a(href=routes.join)
-      span Join
-    a(href=routes.login)
-      span Login
-    //- a(href=routes.upload)
-    //-   span
-    //-     i.fas.fa-video
-    //- a(href=routes.profile)
-    //-   span Profile
-    //- a(href=routes.logout)
-    //-   span Logout
-    
-
-  
+    if authenticate
+      ul
+        li
+          a(href=routes.upload) 
+            span
+              i.fas.fa-video
+        li
+          a(href=routes.profile) Profile
+        li
+          a(href=routes.logout) Logout
+      
+    else
+      ul
+        li
+          a(href=routes.join) Join
+        li
+          a(href=routes.login) Login
+      
