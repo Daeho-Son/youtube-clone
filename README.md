@@ -5,9 +5,9 @@
 # To Do
 
   ## Global
-  [ ] Home
+  [] Home
 
-  [ ] Join
+  [] Join
 
   [ ] Login
 
@@ -28,5 +28,5 @@
   [ ] Video Detail
 
   [ ] Edit Video
-  
+
   [ ] Delete Video
