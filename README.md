@@ -5,28 +5,28 @@
 # To Do
 
   ## Global
-  [] Home
+  - [ ] Home
 
-  [] Join
+  - [ ] Join
 
-  [ ] Login
+  - [ ] Login
 
-  [ ] Logout
+  - [ ] Logout
 
-  [ ] Search
+  - [ ] Search
 
   ## User
-  [ ] Profile
+  - [ ] Profile
 
-  [ ] Edit Profile
+  - [ ] Edit Profile
 
-  [ ] Chagne Password
+  - [ ] Chagne Password
 
   ## Video
-  [ ] Upload
+  - [ ] Upload
 
-  [ ] Video Detail
+  - [ ] Video Detail
 
-  [ ] Edit Video
+  - [ ] Edit Video
 
-  [ ] Delete Video
+  - [ ] Delete Video
