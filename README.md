@@ -3,9 +3,10 @@
  - After watching the lecture, youtube-clone
 
 # To Do
-
+ 1: 태그 추가, 기능
+ 2: 레이아웃 배치
   ### Global
-  - [ ] Home
+  - [1] Home
 
   - [ ] Join
 
@@ -23,10 +24,10 @@
   - [ ] Chagne Password
 
   ### Video
-  - [ ] Upload
+  - [1] Upload
 
-  - [ ] Video Detail
+  - [1] Video Detail
 
-  - [ ] Edit Video
+  - [1] Edit Video
 
-  - [ ] Delete Video
+  - [1] Delete Video
