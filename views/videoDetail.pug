@@ -1,6 +1,9 @@
 extends ./layouts/main
 
 block content
-  video(src=`/${video.src}`, controls=true)
-  h1=video.title
-  h3=video.description
+  .video-conatiner
+    video(src=`/${video.src}`, controls=true)
+    a(href=routes.editVideo(video.id))
+      button 편집
+    h1=video.title
+    h3=video.description
