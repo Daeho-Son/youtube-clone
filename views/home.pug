@@ -1,4 +1,11 @@
 extends ./layouts/main
+include mixins/videoBlock
 
 block content
-  h3 Home
+  if(videos)
+    each video in videos
+      +videoBlock({
+        id:video.id,
+        title:video.title,
+        src:video.src
+      })

@@ -1,0 +1,5 @@
+mixin videoBlock(video = {})
+  .container
+    video(src=video.src)
+    a(href=routes.videoDetail(video.id))
+      h3=video.title

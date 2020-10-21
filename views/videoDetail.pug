@@ -1,4 +1,6 @@
 extends ./layouts/main
 
 block content
-  h3 Video Detail
+  video(src=`/${video.src}`, controls=true)
+  h1=video.title
+  h3=video.description

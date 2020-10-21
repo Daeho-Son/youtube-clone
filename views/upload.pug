@@ -1,4 +1,10 @@
 extends ./layouts/main
 
 block content
-  h3 Upload
+  .form-container
+    form(action=`/videos${routes.upload}` method="post" enctype="multipart/form-data")
+      label(for="videoFile") 파일 선택
+      input(type="file" id="videoFile" name="videoFile" accept="video/*", required=true)
+      input(type="text" name="title" placeholder="title" required=true)
+      input(type="text" name="description" placeholder="description" required=true)
+      input(type="submit" value="확인")
