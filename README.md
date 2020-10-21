@@ -1,6 +1,6 @@
 # youtube-clone
 
- - After watching the lecture, youtube-clone
+ - Trying to make it after watching the lecture
 
 # To Do
 
