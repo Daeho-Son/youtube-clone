@@ -1,24 +1,22 @@
 header.header
   .header__column
     a(href=routes.home)
-      span
-        i.fab.fa-youtube
+      span.header__home-link
+        i.fab.fa-youtube 
+        span Premium
   .header__column
     form(action=routes.search, method="get")
-      input(type="text", name="search_query", placeholder="검색")
-      input(type="submit", value="검색")
+      input.header__search-box(type="text", name="search_query", placeholder="검색")
+      input.header__search-submit(type="submit", value="검색")
   .header__column
     if authenticate
       ul
         li
-          a(href=`/videos${routes.upload}`) 
-            span
-              i.fas.fa-video
+          a(href=`/videos${routes.upload}`) Upload
         li
           a(href=routes.profile) Profile
         li
           a(href=routes.logout) Logout
-      
     else
       ul
         li

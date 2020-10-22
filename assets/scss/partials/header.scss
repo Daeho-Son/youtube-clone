@@ -1,0 +1,124 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+  height: 56px;
+  .header__column {
+    a {
+      text-decoration: none;
+      color: black;
+      &:visited {
+        text-decoration: none;
+      }
+      &:hover {
+        text-decoration: none;
+      }
+      &:focus {
+        text-decoration: none;
+      }
+      &:hover,
+      &:active {
+        text-decoration: none;
+      }
+    }
+    &:first-child {
+      justify-self: start;
+      display: flex;
+      flex-flow: center center;
+      flex-wrap: nowrap;
+      .header__home-link {
+        i {
+          font-size: 30px;
+          color: rgb(255, 0, 0);
+        }
+        span {
+          font-family: "Anton", sans-serif;
+          font-size: 25px;
+        }
+      }
+    }
+    &:nth-child(2) {
+      justify-self: center;
+      form {
+        display: flex;
+        flex-direction: row;
+        flex-flow: center center;
+        flex-wrap: nowrap;
+      }
+    }
+    &:nth-child(3) {
+      justify-self: end;
+      ul {
+        list-style: none;
+        display: flex;
+        flex-flow: center center;
+        flex-wrap: nowrap;
+        padding: 0;
+        margin: 0;
+        li {
+          margin-left: 20px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}
+
+// To Do: javascript로 반응형으로 바로 크기 조절하게
+@media screen and (min-width: 400px) {
+  .header__search-box {
+    display: none;
+  }
+  .header__search-submit {
+    display: none;
+  }
+}
+@media screen and (min-width: 638px) {
+  .header__search-box {
+    display: block;
+    width: 200px;
+    height: 30px;
+  }
+  .header__search-submit {
+    display: block;
+    width: 65px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 740px) {
+  .header__search-box {
+    display: block;
+    width: 300px;
+    height: 30px;
+  }
+  .header__search-submit {
+    display: block;
+    width: 65px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .header__search-box {
+    display: block;
+    width: 400px;
+    height: 30px;
+  }
+  .header__search-submit {
+    display: block;
+    width: 65px;
+    height: 30px;
+  }
+}
+@media screen and (min-width: 1015px) {
+  .header__search-box {
+    display: block;
+    width: 575px;
+    height: 30px;
+  }
+  .header__search-submit {
+    display: block;
+    width: 65px;
+    height: 30px;
+  }
+}

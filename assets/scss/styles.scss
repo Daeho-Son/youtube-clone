@@ -1,3 +1,10 @@
-body {
-  background-color: red;
-}
+@import "config/reset.scss";
+
+@import "main.scss";
+@import "partials/header.scss";
+@import "partials/footer.scss";
+@import "partials/form.scss";
+
+@import "pages/home.scss";
+@import "pages/videoDetail.scss";
+@import "pages/upload.scss";

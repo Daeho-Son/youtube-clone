@@ -30,3 +30,10 @@
   - [ ] Edit Video
 
   - [ ] Delete Video
+
+  ### CSS  
+  [ ] Header 검색창 - 반응형. 크기 변화
+
+  [ ] video 썸네일 - 반응형. 크기 변화
+
+  [ ] 검색 기능

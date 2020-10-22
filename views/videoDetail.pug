@@ -1,9 +1,15 @@
 extends ./layouts/main
 
 block content
-  .video-conatiner
+  .video-detail__container
     video(src=`/${video.src}`, controls=true)
-    a(href=routes.editVideo(video.id))
-      button 편집
-    h1=video.title
-    h3=video.description
+    .video-detail__info
+      .video-detail__column
+        a(href=routes.editVideo(video.id))  
+          button.video-detail__modify 수정
+        h1.video-detail__title=video.title
+        span.video-detail__description=video.description
+        hr
+      .video-detail__column
+        .video-detail__comment-title 댓글
+        .video-detail__comments

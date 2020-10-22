@@ -1,0 +1,21 @@
+.video-detail__container {
+  display: flex;
+  flex-direction: column;
+  video {
+    outline: none;
+  }
+  .video-detail__info {
+    margin: 0 20px;
+    .video-detail__column:first-child {
+      padding-top: 20px;
+      .video-detail__title {
+        margin: 10px 0;
+        font-weight: 600;
+        font-size: 20px;
+      }
+      hr {
+        margin: 20px 0 20px 0;
+      }
+    }
+  }
+}
