@@ -1,11 +1,11 @@
 # youtube-clone
 
- - After watching the lecture, youtube-clone
+ - Trying to make it after watching the lecture
 
 # To Do
 
   ### Global
-  - [ ] Home
+  - [x] Home
 
   - [ ] Join
 
@@ -23,11 +23,11 @@
   - [ ] Chagne Password
 
   ### Video
-  - [ ] Upload
+  - [x] Upload
 
-  - [ ] Video Detail
+  - [x] Video Detail
 
-  - [ ] Edit Video
+  - [x] Edit Video
 
   - [ ] Delete Video
 
