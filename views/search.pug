@@ -1,5 +1,12 @@
-extends ./layouts/main
+extends layouts/main
+include mixins/videoBlock
 
 block content
-  h1 Searching By #{searchQuery}
-  h3 Search
+  if(videos)
+      .main-content
+        each video in videos
+          +videoBlock({
+            id:video.id,
+            title:video.title,
+            src:video.src
+          })

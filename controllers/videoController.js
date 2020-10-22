@@ -8,11 +8,20 @@ export const home = async (req, res) => {
 };
 
 // Search
-export const search = (req, res) => {
+export const search = async( req, res) => {
   const {
     query: { search_query: searchQuery },
   } = req;
-  res.render("search", { pageTitle: "Search", searchQuery });
+  try {
+    const videos = await Video.find({
+      title: { $regex: searchQuery, $options: "i" },
+    });
+    console.log(videos);
+    res.render("search", { pageTitle: "Search", videos });
+  } catch (error) {
+    console.log(error);
+    res.redirect(routes.home);
+  }
 };
 
 // Upload
