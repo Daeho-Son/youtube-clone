@@ -1,0 +1,15 @@
+.contents__item {
+  display: flex;
+  justify-content: center;
+  .video-thumbnail {
+    a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      video {
+        width: 360px;
+      }
+    }
+  }
+}

@@ -3,33 +3,34 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  h3 {
+  h1 {
     font-size: 30px;
     font-weight: 600;
   }
-  input {
-    margin-bottom: 10px;
-  }
-  .form__title {
-    width: 500px;
-    height: 25px;
-    margin: 10px 0;
-  }
-  .description__container {
+  form {
     display: flex;
     flex-direction: column;
-    span {
-      font-size: 20px;
-      font-weight: 600;
+    align-items: center;
+    input {
+      width: 300px;
+      height: 25px;
+      margin: 10px 0;
     }
-    textArea {
-      margin: 5px 0 10px 0;
-      width: 500px;
-      height: 200px;
+    button {
+      width: 300px;
+    }
+    .description__container {
+      display: flex;
+      flex-direction: column;
+      span {
+        font-size: 20px;
+        font-weight: 600;
+      }
+      textArea {
+        margin: 5px 0 10px 0;
+        width: 300px;
+        height: 200px;
+      }
     }
   }
 }

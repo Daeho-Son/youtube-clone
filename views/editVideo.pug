@@ -2,9 +2,9 @@ extends ./layouts/main
 
 block content
   .form__container
-    h3 세부 정보 
+    h1 세부 정보 
     form(action=routes.editVideo(video.id), method="post")
-      input.form__title(type="text" name="title" placeholder="제목(필수 항목)" value=video.title, required=true)
+      input(type="text" name="title" placeholder="제목(필수 항목)" value=video.title, required=true)
       .description__container
         span 설명
         textArea(type="description" name="description" placeholder="시청자에게 동영상에 대해 알려주세요" required=true)=video.description

@@ -6,7 +6,7 @@ const MODE = process.env.WEBPACK_ENV;
 const ENTRY_FILE = path.resolve(__dirname, "assets", "js", "main.js");
 const OUTPUT_DIR = path.join(__dirname, "static");
 
-module.exports = {
+const config = {
   entry: ["@babel/polyfill", ENTRY_FILE],
   mode: MODE,
   module: {
@@ -20,7 +20,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.scss$/,
+        test: /\.(scss)$/,
         use: [
           {
             loader: MiniCssExtractPlugin.loader,
@@ -55,3 +55,5 @@ module.exports = {
     }),
   ],
 };
+
+module.exports = config;

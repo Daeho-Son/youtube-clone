@@ -9,7 +9,7 @@ header.header
       input.header__search-box(type="text", name="search_query", placeholder="검색")
       input.header__search-submit(type="submit", value="검색")
   .header__column
-    if authenticate
+    if user
       ul
         li
           a(href=`/videos${routes.upload}`) Upload

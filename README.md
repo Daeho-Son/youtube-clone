@@ -13,7 +13,7 @@
 
   - [ ] Logout
 
-  - [ ] Search
+  - [x] Search
 
   ### User
   - [ ] Profile
@@ -29,11 +29,9 @@
 
   - [x] Edit Video
 
-  - [ ] Delete Video
+  - [x] Delete Video
 
   ### CSS  
-  [ ] Header 검색창 - 반응형. 크기 변화
+  - Header 검색창 - 반응형. 크기 변화
 
-  [ ] video 썸네일 - 반응형. 크기 변화
-
-  [ ] 검색 기능
+  - video 썸네일 - 반응형. 크기 변화

@@ -1,21 +1,10 @@
 .main-content {
   display: grid;
   grid-area: main;
-  grid-template-rows: repeat(minmax(190px, auto));
+  grid-template-rows: repeat(minmax(0, auto));
   place-content: center center;
   grid-gap: 10px;
   gap: 10px;
-  .contents__item {
-    margin: 10px;
-    video {
-      height: 190px;
-    }
-    a {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-  }
 }
 
 // To Do: 반응형으로 동영상 크기가 변할 수 있게

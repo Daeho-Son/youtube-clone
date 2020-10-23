@@ -4,11 +4,11 @@ import Video from "../models/Video";
 // Home
 export const home = async (req, res) => {
   const videos = await Video.find({});
-  res.render("home", { pageTitle: "Home", videos });
+  res.render("home", { videos });
 };
 
 // Search
-export const search = async( req, res) => {
+export const search = async (req, res) => {
   const {
     query: { search_query: searchQuery },
   } = req;
@@ -17,7 +17,10 @@ export const search = async( req, res) => {
       title: { $regex: searchQuery, $options: "i" },
     });
     console.log(videos);
-    res.render("search", { pageTitle: "Search", videos });
+    res.render("search", {
+      pageTitle: searchQuery,
+      videos,
+    });
   } catch (error) {
     console.log(error);
     res.redirect(routes.home);
@@ -49,7 +52,10 @@ export const videoDetail = async (req, res) => {
   } = req;
   try {
     const video = await Video.findById(id);
-    res.render("videoDetail", { pageTitle: "Video Detail", video });
+    res.render("videoDetail", {
+      pageTitle: video.title,
+      video,
+    });
   } catch (error) {
     console.log(error);
     res.redirect(routes.home);
@@ -63,7 +69,7 @@ export const getEditVideo = async (req, res) => {
   } = req;
   try {
     const video = await Video.findById(id);
-    res.render("editVideo", { pageTitle: "Edit Video", video });
+    res.render("editVideo", { pageTitle: `편집 ${video.title}`, video });
   } catch (error) {
     console.log(error);
     res.redirect(routes.home);
